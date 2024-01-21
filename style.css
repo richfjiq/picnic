@@ -1,0 +1,988 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+}
+
+.start {
+  background-image: url(./images/desktop_start_picnic.png);
+  max-width: 1920px;
+  width: 100%;
+  background-repeat: no-repeat;
+  aspect-ratio: 16/9;
+  background-size: contain;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.start_button_container {
+  position: absolute;
+  border-radius: 28px;
+  bottom: 65px;
+  border: 4px solid white;
+  overflow: hidden;
+  background-color: rgba(0, 217, 250, 0.74);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-image: url('./images//grain.png');
+}
+
+.start_button {
+  width: 414px;
+  height: 137px;
+  font-size: 60px;
+  font-family: 'Montserrat' sans-serif;
+  font-weight: bold;
+  overflow: hidden;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.question1 {
+  background-image: url(./images/desktop_question1_picnic.png);
+  background-repeat: no-repeat;
+  max-width: 1920px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-size: contain;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.row_container {
+  /* width: 1228px; */
+  width: 64%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 100px;
+}
+
+.left_container {
+  border: 4px solid white;
+  overflow: hidden;
+  background-color: rgba(0, 217, 250, 0.74);
+  width: 47%;
+  height: 156px;
+  border-radius: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url('./images/grain.png');
+  box-shadow: 6.5px 6.5px 37px 0px rgba(255, 255, 255, 0.4);
+}
+
+.right_container {
+  border: 4px solid white;
+  overflow: hidden;
+  background-color: rgba(0, 217, 250, 0.74);
+  width: 47%;
+  height: 156px;
+  border-radius: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url('./images/grain.png');
+  box-shadow: 6.5px 6.5px 37px 0px rgba(255, 255, 255, 0.4);
+}
+
+p {
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.question4 {
+  background-image: url(./images/desktop_question4_picnic.png);
+  background-repeat: no-repeat;
+  max-width: 1920px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-size: contain;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.question5 {
+  background-image: url(./images/desktop_question5_picnic.png);
+  background-repeat: no-repeat;
+  max-width: 1920px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-size: contain;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+
+.form_container {
+  width: 54.8%;
+}
+
+select,
+input {
+  height: 79px;
+  border-radius: 16px;
+  border: 3px solid white;
+  background-color: rgba(35, 86, 175, 0.8);
+  color: white;
+  font-weight: 500;
+  font-size: 32px;
+  padding: 0 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('./images/arrow-down.png');
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 2.65rem auto;
+  box-sizing: content-box;
+}
+
+input::placeholder {
+  color: white;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+label {
+  font-weight: 500;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+
+.input_error {
+  border: 2px solid rgb(227, 54, 54);
+}
+
+.input_success {
+  border: 2px solid rgb(80, 227, 54);
+}
+
+.form_row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form_tel_row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.code_input_cont {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.tel_input_cont {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.form_input_container {
+  width: 48.2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox_container {
+  width: 100%;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.checkbox_row {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.checkbox_label {
+  margin: 0;
+  font-weight: 500;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+input[type='checkbox'] {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.checkbox_error {
+  outline: 1px auto red;
+}
+
+.submit_button {
+  width: 100%;
+  border-radius: 28px;
+  border: 4px solid white;
+  overflow: hidden;
+  background-color: rgba(0, 217, 250, 0.74);
+  height: 100px;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: white;
+  background-image: url('./images/grain.png');
+  box-shadow: 6.5px 6.5px 37px 0px rgba(0, 0, 0, 0.4);
+}
+
+.question6 {
+  background-image: url(./images/desktop_question6_picnic.png);
+  background-repeat: no-repeat;
+  max-width: 1920px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-size: contain;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+@media screen and (max-width: 1700px) {
+  .start_button {
+    width: 372px;
+    height: 123px;
+    font-size: 54px;
+  }
+
+  .row_container {
+    bottom: 90px;
+  }
+
+  .left_container {
+    height: 140px;
+  }
+
+  .right_container {
+    height: 140px;
+  }
+
+  p {
+    font-size: 26px;
+  }
+
+  select,
+  input {
+    height: 71px; /* 79 */
+    font-size: 28px; /* 32 */
+  }
+
+  select {
+    background-size: 2.2rem auto; /* 2.65 */
+  }
+
+  label {
+    font-size: 21px; /* 24 */
+    font-family: 'Montserrat', sans-serif;
+  }
+  .checkbox_label {
+    font-size: 21px; /* 24 */
+  }
+  input[type='checkbox'] {
+    width: 36px; /* 40 */
+    height: 36px; /* 40 */
+  }
+
+  .submit_button {
+    height: 90px; /* 100 */
+    font-size: 36px; /* 40 */
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .start_button_container {
+    bottom: 55px;
+  }
+
+  .start_button {
+    width: 331px;
+    height: 109px;
+    font-size: 48px;
+  }
+
+  .row_container {
+    bottom: 80px;
+  }
+
+  .left_container {
+    height: 130px;
+  }
+
+  .right_container {
+    height: 130px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+  select,
+  input {
+    height: 63px;
+    font-size: 26px;
+  }
+
+  select {
+    background-size: 2.1rem auto;
+  }
+
+  label {
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .checkbox_label {
+    font-size: 19px;
+  }
+  input[type='checkbox'] {
+    width: 32px;
+    height: 32px;
+  }
+
+  .submit_button {
+    height: 80px;
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .start_button_container {
+    bottom: 50px;
+  }
+
+  .start_button {
+    width: 290px;
+    height: 96px;
+    font-size: 42px;
+  }
+
+  .row_container {
+    bottom: 70px;
+  }
+
+  .left_container {
+    height: 120px;
+  }
+
+  .right_container {
+    height: 120px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  select,
+  input {
+    height: 55px;
+    font-size: 22px;
+    padding: 0 15px;
+    border: 2px solid white;
+  }
+
+  select {
+    background-size: 1.86rem auto;
+  }
+
+  label {
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .checkbox_label {
+    font-size: 17px;
+  }
+  input[type='checkbox'] {
+    width: 28px;
+    height: 28px;
+  }
+
+  .submit_button {
+    height: 70px;
+    font-size: 28px;
+    border: 3px solid white;
+  }
+
+  .form_row {
+    margin-bottom: 15px;
+  }
+  .checkbox_container {
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .start_button_container {
+    bottom: 50px;
+  }
+
+  .start_button {
+    width: 248px;
+    height: 82px;
+    font-size: 36px;
+  }
+
+  .row_container {
+    bottom: 60px;
+  }
+
+  .left_container {
+    height: 110px;
+  }
+
+  .right_container {
+    height: 110px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  select,
+  input {
+    height: 47px;
+    font-size: 19px;
+    padding: 0 10px;
+  }
+
+  select {
+    background-size: 1.6rem auto;
+    background-position: right 0.4rem top 50%;
+  }
+
+  label {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .checkbox_label {
+    font-size: 14px;
+  }
+  input[type='checkbox'] {
+    width: 24px;
+    height: 24px;
+  }
+
+  .submit_button {
+    height: 60px;
+    font-size: 24px;
+  }
+  .form_row {
+    margin-bottom: 10px;
+  }
+  .checkbox_container {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .start_button_container {
+    bottom: 45px;
+  }
+
+  .start_button {
+    width: 207px;
+    height: 69px;
+    font-size: 30px;
+  }
+
+  .row_container {
+    bottom: 45px;
+    width: 66%;
+  }
+
+  .left_container {
+    height: 100px;
+  }
+
+  .right_container {
+    height: 100px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  select,
+  input {
+    height: 40px;
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  select {
+    background-size: 1.3rem auto;
+    background-position: right 0.4rem top 50%;
+  }
+
+  label {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .checkbox_label {
+    font-size: 14px;
+  }
+  input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+  }
+
+  .submit_button {
+    height: 50px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .start {
+    background-image: url(./images/mobile_start_picnic.png);
+    background-size: cover;
+    width: 100vw;
+    aspect-ratio: 9/16;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .start_button_container {
+    position: static;
+    width: 40.7%;
+    height: 7.3%;
+    margin-top: 11%;
+  }
+
+  .start_button {
+    width: 100%;
+    height: 100%;
+    font-size: 55px;
+  }
+
+  .row_container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    bottom: 0;
+  }
+
+  .left_container {
+    width: 61%;
+    height: 9.8%;
+    margin-bottom: 5%;
+  }
+
+  .right_container {
+    width: 61%;
+    height: 9.8%;
+    margin-bottom: 30%;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  .question1 {
+    background-image: url(./images/mobile_question1_picnic.png);
+    background-size: cover;
+    width: 100vw;
+    aspect-ratio: 9/16;
+  }
+
+  .question4 {
+    background-image: url(./images/mobile_question4_picnic.png);
+    background-size: cover;
+    width: 100vw;
+    aspect-ratio: 9/16;
+  }
+
+  .question5 {
+    background-image: url(./images/mobile_question5_picnic.png);
+    background-size: cover;
+    width: 100vw;
+    aspect-ratio: 9/16;
+  }
+
+  .question6 {
+    background-image: url(./images/mobile_question6_picnic.png);
+    background-size: cover;
+    width: 100vw;
+    aspect-ratio: 9/16;
+  }
+
+  .form_container {
+    width: 73%;
+  }
+
+  .form_row {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .form_input_container {
+    width: 100%;
+  }
+
+  select,
+  input {
+    height: 73px;
+    border: 3px solid white;
+    font-size: 30px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: 5px 0 10px;
+    border-radius: 14px;
+  }
+
+  select {
+    background-position: right 0.7rem top 50%;
+    background-size: 2.65rem auto;
+  }
+
+  label {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+
+  .checkbox_label {
+    font-size: 24px;
+  }
+
+  input[type='checkbox'] {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .submit_button {
+    border-radius: 25px;
+    border: 3.5px solid white;
+    height: 92px;
+    font-size: 36px;
+  }
+
+  .checkbox_container {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .checkbox_row {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .form_row .form_input_container:first-of-type {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .start_button_container {
+    border-radius: 22px;
+  }
+
+  .start_button {
+    font-size: 47px;
+  }
+
+  .left_container {
+    width: 61%;
+    height: 9.8%;
+  }
+
+  .right_container {
+    width: 61%;
+    height: 9.8%;
+    margin-bottom: 26%;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  select,
+  input {
+    height: 62px;
+    border: 2.5px solid white;
+    font-size: 25px;
+    padding: 0 10px;
+    border-radius: 13px;
+  }
+
+  select {
+    background-position: right 0.7rem top 50%;
+    background-size: 2rem auto;
+  }
+
+  label {
+    font-size: 19px;
+  }
+
+  .checkbox_label {
+    font-size: 19px;
+  }
+
+  input[type='checkbox'] {
+    width: 32px;
+    height: 32px;
+  }
+
+  .submit_button {
+    border-radius: 22px;
+    border: 3px solid white;
+    height: 79px;
+    font-size: 31px;
+  }
+
+  .checkbox_container {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .start_button_container {
+    border-radius: 20px;
+  }
+
+  .start_button {
+    font-size: 41px;
+  }
+
+  .left_container {
+    border: 3px solid white;
+  }
+
+  .right_container {
+    border: 3px solid white;
+  }
+
+  p {
+    font-size: 19px;
+  }
+
+  select,
+  input {
+    height: 56px;
+    border: 2px solid white;
+    font-size: 22px;
+    padding: 0 10px;
+    margin: 3px 0 6px;
+    border-radius: 11px;
+  }
+
+  select {
+    background-position: right 0.7rem top 50%;
+    background-size: 2rem auto;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  .checkbox_label {
+    font-size: 16px;
+  }
+
+  input[type='checkbox'] {
+    width: 28px;
+    height: 28px;
+  }
+
+  .submit_button {
+    border-radius: 19px;
+    border: 3px solid white;
+    height: 70px;
+    font-size: 28px;
+  }
+
+  .checkbox_container {
+    margin-bottom: 10px;
+  }
+
+  .checkbox_row {
+    margin: 5px 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .start_button_container {
+    border-radius: 15px;
+  }
+
+  .start_button {
+    font-size: 33px;
+  }
+
+  .right_container {
+    margin-bottom: 24%;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  select,
+  input {
+    height: 44px;
+    border: 1.5px solid white;
+    font-size: 18px;
+    border-radius: 9px;
+  }
+
+  select {
+    background-position: right 0.7rem top 50%;
+    background-size: 1.8rem auto;
+  }
+
+  label {
+    font-size: 13px;
+  }
+
+  .checkbox_label {
+    font-size: 13px;
+  }
+
+  input[type='checkbox'] {
+    width: 22px;
+    height: 22px;
+  }
+
+  .submit_button {
+    border-radius: 16px;
+    border: 2px solid white;
+    height: 56px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .start_button_container {
+    border-radius: 13px;
+  }
+
+  .start_button {
+    font-size: 27px;
+  }
+
+  .left_container {
+    border: 2px solid white;
+  }
+
+  .right_container {
+    margin-bottom: 23%;
+    border: 2px solid white;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  select,
+  input {
+    height: 37px;
+    border: 1px solid white;
+    font-size: 14px;
+    border-radius: 7px;
+  }
+
+  select {
+    background-position: right 0.7rem top 50%;
+    background-size: 1.6rem auto;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  .checkbox_label {
+    font-size: 12px;
+  }
+
+  input[type='checkbox'] {
+    width: 18px;
+    height: 18px;
+  }
+
+  .submit_button {
+    border-radius: 13px;
+    border: 2px solid white;
+    height: 47px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .start_button_container {
+    border-radius: 12px;
+  }
+
+  .start_button {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  select,
+  input {
+    height: 33px;
+    font-size: 12px;
+    border-radius: 6px;
+  }
+
+  select {
+    background-position: right 0.7rem top 50%;
+    background-size: 1.4rem auto;
+  }
+
+  label {
+    font-size: 11px;
+  }
+
+  .checkbox_label {
+    font-size: 11px;
+  }
+
+  input[type='checkbox'] {
+    width: 16px;
+    height: 16px;
+  }
+
+  .submit_button {
+    border-radius: 7px;
+    border: 1.5px solid white;
+    height: 41px;
+    font-size: 16px;
+  }
+}

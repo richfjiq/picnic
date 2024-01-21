@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picnic Fest</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="start">
+      <div class="start_button_container">
+        <button class="start_button">EMPEZAR</button>
+      </div>
+    </section>
+    <section class="question1">
+      <div class="row_container">
+        <div class="left_container">
+          <p>
+            DECIDÍS IGNORAR QUE TU CRUSH <br />
+            ESTÁ AHÍ Y LLEGÁS DIRECTO A <br />
+            SALUDAR A TUS AMIGOS
+          </p>
+        </div>
+        <div class="right_container">
+          <p>
+            VAS Y SALUDÁS A TU CRUSH DE <br />
+            BESO Y ABRAZO COMO SI LO <br />
+            CONOCIERAS DE TODA LA VIDA
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="question1">
+      <div class="row_container">
+        <div class="left_container">
+          <p>
+            SORRY SOY MUY DISTRAÍD@, PERO <br />
+            TE LO COMPENSO INVITANDOTE A <br />
+            UN TROPICAL
+          </p>
+        </div>
+        <div class="right_container">
+          <p>
+            VEO QUE MI ESTRATEGIA DE QUE TE <br />
+            ACERCARAS VOS FUNCIONÓ
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="question1">
+      <div class="row_container">
+        <div class="left_container">
+          <p>
+            ME LE ACERCO PARA CANTAR CON <br />
+            ÉL A TODO PULMÓN MIS CANCIONES <br />
+            FAVORITAS...
+          </p>
+        </div>
+        <div class="right_container">
+          <p>
+            HACÉS COMO QUE NO L@ VISTE Y <br />
+            ESPERÁS A QUE SE ACERQUE A <br />
+            HABLARTE, PORQUE VOS YA DISTE <br />
+            EL PRIMER PASO...
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="question4"></section>
+    <section class="question5">
+      <div class="form_container">
+        <form id="form">
+          <div class="form_row">
+            <div class="form_input_container">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" placeholder="Escribe tu nombre" />
+              <!-- <small>Mensaje de error</small> -->
+            </div>
+            <div class="form_input_container">
+              <label for="apellido">Apellido</label>
+              <input
+                type="text"
+                id="apellido"
+                placeholder="Escribe tu apellido"
+              />
+              <!-- <small>Mensaje de error</small> -->
+            </div>
+          </div>
+          <div class="form_row">
+            <div class="form_input_container">
+              <label for="genero">Género</label>
+              <select name="genero" id="genero">
+                <option value="">Seleccionar Género</option>
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+              </select>
+              <!-- <small>Mensaje de error</small> -->
+            </div>
+            <div class="form_input_container">
+              <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+              <input
+                type="date"
+                id="fecha_nacimiento"
+                placeholder="Seleccionar Fecha"
+              />
+              <!-- <small>Mensaje de error</small> -->
+            </div>
+          </div>
+          <div class="form_row">
+            <div class="form_input_container">
+              <label for="pais">País</label>
+              <select name="pais" id="pais">
+                <option value="">Seleccionar País</option>
+                <option value="pais1">País 1</option>
+                <option value="pais2">País 2</option>
+              </select>
+              <!-- <small>Mensaje de error</small> -->
+            </div>
+            <div class="form_input_container">
+              <label for="provincia">Provincia</label>
+              <select name="provincia" id="provincia">
+                <option value="">Seleccionar Provincia</option>
+                <option value="provincia1">Provincia 1</option>
+                <option value="provicina2">Provincia 2</option>
+              </select>
+              <!-- <small>Mensaje de error</small> -->
+            </div>
+          </div>
+          <div class="form_row">
+            <div class="form_input_container">
+              <div class="form_tel_row">
+                <div class="code_input_cont">
+                  <label for="pais">Código</label>
+                  <select name="codigo" id="codigo">
+                    <option value="+1">+1</option>
+                    <option value="+2">+2</option>
+                    <option value="+3">+3</option>
+                  </select>
+                  <!-- <small>Mensaje de error</small> -->
+                </div>
+                <div class="tel_input_cont">
+                  <label for="pais">Télefono</label>
+                  <input
+                    type="tel"
+                    id="telefono"
+                    placeholder="Ej. 61244-6231"
+                    pattern="[0-9]{5}-[0-9]{4}"
+                    maxlength="10"
+                  />
+                  <!-- <small>Mensaje de error</small> -->
+                </div>
+              </div>
+            </div>
+            <div class="form_input_container">
+              <label for="correo">Correo</label>
+              <input type="email" id="correo" placeholder="name@mail.com" />
+              <!-- <small>Mensaje de error</small> -->
+            </div>
+          </div>
+          <div class="checkbox_container">
+            <div class="checkbox_row">
+              <input type="checkbox" id="terminos" name="terminos" />
+              <label class="checkbox_label" for="scales"
+                >Acepto los Términos y Condiciones</label
+              >
+            </div>
+            <div class="checkbox_row">
+              <input type="checkbox" id="politica" name="politica" />
+              <label class="checkbox_label" for="scales"
+                >Acepto la Política de Privacidad</label
+              >
+            </div>
+          </div>
+          <button type="submit" id="submit_button" class="submit_button">
+            ENVIAR
+          </button>
+        </form>
+      </div>
+    </section>
+    <section class="question6"></section>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>
