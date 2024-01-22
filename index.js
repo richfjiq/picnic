@@ -10,6 +10,36 @@ const correo = document.getElementById('correo');
 const terminos = document.getElementById('terminos');
 const politica = document.getElementById('politica');
 const submitButton = document.getElementById('submit_button');
+const startButton = document.getElementById('startButton');
+const arrowsContainer = document.getElementById('arrows_container');
+
+const pages = document.querySelectorAll('section');
+const prevBtn = document.getElementById('previous_icon');
+const nextBtn = document.getElementById('next_icon');
+let currentPageIndex = 0;
+
+function showPage(index) {
+  window.location = `#page${index + 1}`;
+}
+
+prevBtn.addEventListener('click', function () {
+  if (currentPageIndex > 0) {
+    currentPageIndex--;
+    showPage(currentPageIndex);
+  }
+});
+
+nextBtn.addEventListener('click', function () {
+  if (currentPageIndex < pages.length - 1) {
+    currentPageIndex++;
+    showPage(currentPageIndex);
+  }
+});
+
+startButton.addEventListener('click', function () {
+  currentPageIndex++;
+  window.location = '#page2';
+});
 
 function showError(input) {
   input.className = 'input_error';
@@ -77,6 +107,7 @@ function checkCheckbox(inputArr) {
 
 form.addEventListener('submit', function (e) {
   e.preventDefault();
+  console.log('clicked submit button');
   const statusInputsRequired = checkRequired([
     nombre,
     apellido,
@@ -123,6 +154,9 @@ form.addEventListener('submit', function (e) {
         correo.value = '';
         terminos.checked = false;
         politica.checked = false;
-      });
+      })
+      .catch((error) => console.log(error));
+
+    window.location = '#page7';
   }
 });
