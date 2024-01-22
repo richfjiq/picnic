@@ -16,9 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const pages = document.querySelectorAll('section');
   const prevBtn = document.getElementById('previous_icon');
   const nextBtn = document.getElementById('next_icon');
+  const tabletPrevBtn = document.getElementById('prev_btn');
+  const tabletNextBtn = document.getElementById('next_btn');
   let currentPageIndex = 0;
 
   function showPage(index) {
+    console.log({ pages });
     window.location = `#page${index + 1}`;
   }
 
@@ -39,6 +42,33 @@ document.addEventListener('DOMContentLoaded', () => {
   startButton.addEventListener('click', function () {
     currentPageIndex++;
     window.location = '#page2';
+  });
+
+  function showPageTabSlider(index) {
+    console.log('index -----', index);
+    if (index === 0) {
+      pages[index + 1].style.zIndex = 1;
+    } else if (index === pages.length - 1) {
+      pages[index - 1].style.zIndex = 1;
+    } else {
+      pages[index + 1].style.zIndex = 1;
+      pages[index - 1].style.zIndex = 1;
+    }
+    pages[index].style.zIndex = 2;
+  }
+
+  tabletPrevBtn.addEventListener('click', function () {
+    if (currentPageIndex > 0) {
+      currentPageIndex--;
+      showPageTabSlider(currentPageIndex);
+    }
+  });
+
+  tabletNextBtn.addEventListener('click', function () {
+    if (currentPageIndex < pages.length - 1) {
+      currentPageIndex++;
+      showPageTabSlider(currentPageIndex);
+    }
   });
 
   function showError(input) {
